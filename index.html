@@ -1,7 +1,65 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
+<script>
+  
+  $(document).ready(function(){
+  $(".hide").hide();
+  
+  $(".marker-stjohns").click(function(){
+    $(".hide").hide();
+    $(".stjohns-txt").fadeIn(300);
+  });
+  
+   $(".marker-toronto").click(function(){
+      $(".hide").hide();
+    $(".toronto-txt").fadeIn(300);
+  });
+  
+   $(".marker-montreal").click(function(){
+      $(".hide").hide();
+    $(".montreal-txt").fadeIn(300);
+  });
+});
+</script>
+
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap');
+  
+ .mapbody {
+  position: relative;
+  min-height: 100vh; 
+}
+
+h {
+  font-family: "Wix Madefor Display", sans-serif;
+}
+
+.pin:hover {
+  fill:red;
+}
+
+.hide {
+  background-color: #F9F6EE;
+  border-radius:8px;
+  padding: 10px;
+  text-align:center; 
+  position: absolute; 
+}
+
+.montreal-txt {
+  bottom: 36%;
+  left: 53%;
+}
+
+.stjohns-txt {
+  bottom: 34%;
+  right: 12%;
+}
+
+.toronto-txt {
+  bottom: 30%;
+  left: 40%;
+}
 </style>
 
 <div class="mapbody">
